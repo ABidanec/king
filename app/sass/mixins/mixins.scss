@@ -1,0 +1,48 @@
+@mixin placeholder($color){
+  ::-webkit-input-placeholder {color:$color;
+                                text-overflow:ellipsis;
+                                font-style: italic;
+                              }
+  ::-moz-placeholder          {color:$color;
+                                text-overflow:ellipsis;
+                                font-style: italic;
+                              }
+  :-moz-placeholder           {color:$color;
+                                text-overflow:ellipsis;
+                                font-style: italic;
+                              }
+  :-ms-input-placeholder      {color:$color;
+                                text-overflow:ellipsis;
+                                font-style: italic;
+                              }
+}
+
+@mixin link_hover($static_color, $hover_color){
+  color: $static_color;
+  transition: $time;
+
+  &:hover{
+    transition: $time;
+    color: $hover_color;
+  }
+}
+
+@mixin block_hover($static_color, $hover_color){
+  background: $static_color;
+  transition: $time;
+
+  &:hover{
+    transition: $time;
+    background: $hover_color;
+  }
+}
+
+@mixin borderBottomHover($staticColor, $hoverColor,$height){
+  border-bottom:$height solid $staticColor;
+  transition: $time;
+
+  &:hover{
+    transition: $time;
+    border-color:$hoverColor;
+  }
+}

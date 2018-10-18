@@ -1,0 +1,15 @@
+.header-middle{
+  padding:1em 0;
+}
+
+.logo__link{
+  font-size:3.75em;
+  text-transform: lowercase;
+  text-decoration: none;
+
+  span{
+    font-weight:700;
+  }
+  
+  @include link_hover($colorBody, $colorBodyHover);
+}

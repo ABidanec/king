@@ -1,0 +1,142 @@
+html, body{
+  min-height: 100%;
+  font-family:"Roboto", Helvetica, Arial, sans-serif;
+  color: $colorBody;
+  background: $backgroundBody;
+}
+
+.wrapper{
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+
+  &:after{
+    content: "";
+    display: block;
+    height: $heightFooter;
+  }
+}
+
+.footer{
+  height: $heightFooter;
+  margin: -$heightFooter 0 0;
+}
+
+.clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center{
+  width: 1790px;
+  max-width: 98%;
+  margin: 0 auto
+}
+
+@include placeholder($colorBody);
+
+input {outline:none;
+  font-style: italic;}
+
+.news-block{
+  position: relative;
+}
+
+a{
+  @include link_hover($colorLink, $colorLinkHover);
+}
+
+//news block elements
+.news-block__img{
+  width: 100%;
+}
+
+.news-block__category{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 0.2em 0.4em;
+  background: $backgroundSocHeadHover;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.news-block__head{
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  width: 82%;
+  a{
+    text-decoration: none;
+    @include link_hover($backgroundBody, $colorLink);
+  }
+}
+
+.news-block__date{
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  color: $colorLink;
+
+  i{
+    color: #fff;
+  }
+}
+
+.news-soc__list{
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.news-soc__item{
+  float: left;
+
+}
+
+.news-soc__link {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  @include link_hover($backgroundBody, $backgroundSocHeadHover);
+  border-radius: 50%;
+
+  &:hover {
+    background: $colorBodyHover;
+    transition: $time;
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+//end news block elements
+
+.block__head{
+  position: relative;
+  font-style: italic;
+  padding: 0 0.5em 0 0;
+  font-size: 2.5em;
+  overflow: hidden;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #000;
+  }
+}

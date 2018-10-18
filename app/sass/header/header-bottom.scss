@@ -1,0 +1,66 @@
+.header-bottom{
+  padding:1em 0 0;
+  border-bottom: 2px solid $colorBody;
+  margin: 0 0 1em;
+}
+
+.menu{
+  float: left;
+  width: 80%;
+  text-align: justify;
+  margin: 0 0 -1.125em 0;
+}
+
+.menu__list{
+
+  &:after{
+    content: "";
+    height: 0;
+    display: block;
+  }
+}
+
+.menu__item{
+  display: inline-block;
+}
+
+.menu__link{
+  display: inline-block;
+  padding: 1em 1.3em 1.125em;
+  text-decoration: none;
+  @include link_hover($colorBody,$colorLink);
+  @include borderBottomHover($colorBody, $colorLink, 2px);
+}
+
+.menu__link_active{
+  border-bottom: 2px solid $colorLink;
+}
+
+.soc__list{
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+
+.soc__item{
+  display: inline-block;
+}
+
+.soc__link{
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+
+  @include block_hover($backgroundBody,$backgroundSocHeadHover);
+  @include link_hover($colorBodyHover,$colorBody);
+
+  i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+  }
+}

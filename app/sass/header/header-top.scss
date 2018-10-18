@@ -1,0 +1,45 @@
+.header-top{
+  padding:2em 0 0.3em;
+  border-bottom:1px solid #d2d1d1;
+  vertical-align: top;
+  margin: 0 0 1em;
+}
+
+.header-top__date{
+  float: left;
+  font-style: italic;
+}
+
+.header-top__right{
+  float: right;
+
+}
+
+.header-top__search{
+  display: inline-block;
+
+  input{
+    border: none;
+    width:8.75em;
+  }
+  a{
+    @include link_hover($colorBody,$colorBodyHover);
+    text-decoration: none;
+  }
+
+}
+
+.header-top__list{
+  display: inline-block;
+}
+
+.header-top__item{
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+.header-top__link{
+  font-style: italic;
+  text-decoration: none;
+  @include link_hover($colorLink, $colorBody);
+}
