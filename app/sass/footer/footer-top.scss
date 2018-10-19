@@ -1,0 +1,42 @@
+.footer__block{
+  float: left;
+  margin:0 0 1em 0;
+}
+
+.footer-menu,
+.footer__info{
+  width:15%;
+}
+
+.footer-tags{
+  width: 20%;
+}
+.footer-tags__item{
+  min-width:2em;
+  min-height:2em;
+  display: inline-block;
+  margin: 0 4% 3% 0;
+}
+.footer-tags_link{
+  @include block_hover($colorBodyHover,#000);
+  @include link_hover(#000, $backgroundSocHeadHover);
+}
+
+
+.footer-email{
+  width: 50%;
+}
+
+.footer__list{
+
+}
+
+.footer__item{
+  padding:0.5em 0;
+}
+
+.footer__link{
+  text-decoration: none;
+  font-style: italic;
+  @include link_hover($colorLink,$colorBody);
+}

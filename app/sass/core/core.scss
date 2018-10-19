@@ -140,3 +140,32 @@ a{
     background: #000;
   }
 }
+
+//block item
+
+
+.block__item_2{
+  width: 48%;
+  margin: 0 0 3% 1%;
+
+  &:first-child(odd){
+    margin: 0 0 3% 0;
+  }
+}
+
+.block__item_3{
+  width: 32%;
+  margin: 0 0 3% 1%;
+
+  &:first-child(3n+1){
+    margin: 0 0 3% 0;
+  }
+}
+//end block item
+
+//btn
+.btn{
+  text-decoration: none;
+  padding:1em;
+}
+//end btn

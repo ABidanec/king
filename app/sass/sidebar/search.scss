@@ -1,0 +1,15 @@
+.sidebar-search{
+  background: #000;
+  padding: 1em;
+  margin: 0 0 1em 0;
+  color: #fff;
+
+  input{
+    padding:1em;
+  }
+}
+
+
+.sidebar-search__btn{
+  @extend .btn__post;
+}

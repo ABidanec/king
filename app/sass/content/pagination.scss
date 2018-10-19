@@ -1,0 +1,19 @@
+.pagination{
+  padding: 2em 0;
+  text-align: left;
+}
+
+.pagination__item{
+  display: inline-block;
+  float: left;
+}
+
+.pagination__link{
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+
+  @include link_hover($colorBody,$backgroundSocHeadHover);
+  @include block_hover(#fff,#000);
+}

@@ -1,0 +1,54 @@
+.news-last__list{
+  vertical-align: top;
+}
+.news-last__item{
+  padding: 1.5em 0;
+  border-bottom: 1px solid $colorBodyHover;
+}
+.news-last__left{
+  position: relative;
+  display: inline-block;
+  width: 24%;
+  margin: 0 1% 0 0;
+}
+.news-last__img{
+  width: 100%;
+}
+.news-soc__item{
+  margin: 0 0 0 0.5em;
+}
+.news-last__right{
+  position: relative;
+  float: right;
+  width:74%;
+
+  .news-soc__list{
+    bottom: -7%;
+  }
+
+  .news-soc__link{
+    @include block_hover($colorBodyHover,$colorLink);
+  }
+}
+
+.post__date,
+.post__author,
+.post__comments{
+  float: left;
+  color: $colorLink;
+  margin: 0 1em 0 0;
+  font-style: italic;
+}
+
+.post__author{
+  span{
+    color: $colorBody;
+  }
+}
+
+.post__comments{
+  i{
+    color: $colorBody;
+  }
+}
+

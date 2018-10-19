@@ -1,13 +1,18 @@
 .block__item{
+  position: relative;
   display: inline-block;
-}
 
-.block__item_2{
-  width: 47%;
-  margin: 0 0 3% 2%;
+  .news-soc__list{
+    right: 0;
+    bottom: 0;
+  }
 
-  &:first-child(2n+1){
-    margin: 0 0 3% 0;
+  .news-soc__item{
+    margin: 0 0 0 0.5em;
+  }
+
+  .news-soc__link{
+    @include block_hover($colorBodyHover,$colorLink);
   }
 }
 
@@ -16,10 +21,15 @@
 }
 
 .post__head{
+  margin-top: 0;
   a{
     text-decoration: none;
     @include link_hover($colorBody,$colorLink);
   }
+}
+
+.post_prew{
+  margin: 0 0 2em 0;
 }
 
 .post__date{

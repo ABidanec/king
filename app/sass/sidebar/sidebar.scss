@@ -2,3 +2,18 @@
   float: left;
   width: 25%;
 }
+
+.sidebar__head{
+  font-size:1.5em;
+  font-weight:400;
+  font-style: italic;
+  margin-top: 0;
+}
+
+@import "search";
+
+@import "sidebar-soc";
+
+@import "recent";
+
+@import "sidebar-comments";

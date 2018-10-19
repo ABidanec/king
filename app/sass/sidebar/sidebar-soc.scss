@@ -1,0 +1,23 @@
+.sidebar-soc{
+  background: $backgroundSidebarSoc;
+  padding: 1em;
+  margin: 0 0 2em 0;
+
+  .soc__list{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2em;
+  }
+}
+
+.sidebar-email{
+  input{
+    width:50%;
+    padding:1em;
+  }
+}
+
+.sidebar-email__btn{
+  width:29%;
+  @extend .btn__post;
+}

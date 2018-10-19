@@ -1,0 +1,29 @@
+.big-post{
+  padding: 0 0 2em;
+  margin: 0 0 2em;
+  border-bottom: 1px solid $colorBodyHover;
+}
+
+.big-post__left,
+.big-post__right{
+  position: relative;
+  float: left;
+  width:48%;
+}
+
+.big-post__left{
+  margin:0 2% 0 0;
+}
+
+.big-post__img{
+  width: 100%;
+}
+
+.big-post__category{
+
+}
+
+.btn__post{
+  @include block_hover($backgroundSocHeadHover,$colorBodyHover);
+  @include link_hover($colorBody,#fff);
+}
