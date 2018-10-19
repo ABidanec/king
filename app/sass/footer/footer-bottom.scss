@@ -1,0 +1,25 @@
+.footer__bottom{
+  padding:2em 0;
+  border-top: 1px solid $colorBody;
+
+
+  .logo{
+    display: inline-block;
+  }
+}
+
+.footer-copy{
+  position: relative;
+  display: inline-block;
+  margin:1em 0 0 2em;
+  vertical-align: top;
+}
+
+.footer-soc{
+  position: relative;
+  float: right;
+  margin: 0.5em 0 0;
+  .soc__list{
+    width: 100%;
+  }
+}

@@ -1,3 +1,7 @@
+.footer-top{
+  border-top: 2px solid $colorBody;
+  padding: 2em 0;
+}
 .footer__block{
   float: left;
   margin:0 0 1em 0;
@@ -9,22 +13,23 @@
 }
 
 .footer-tags{
-  width: 20%;
+  width: 30%;
 }
 .footer-tags__item{
   min-width:2em;
   min-height:2em;
   display: inline-block;
-  margin: 0 4% 3% 0;
+  margin: 0 3% 3% 0;
 }
 .footer-tags_link{
+  display: inline-block;
   @include block_hover($colorBodyHover,#000);
   @include link_hover(#000, $backgroundSocHeadHover);
 }
 
 
 .footer-email{
-  width: 50%;
+  width: 40%;
 }
 
 .footer__list{
