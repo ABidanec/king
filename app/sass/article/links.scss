@@ -1,0 +1,28 @@
+.links{
+  margin: 0 0 2em 0;
+  padding:1em 0;
+  border-top: 1px solid #000;
+}
+
+.links__left,
+.links__right{
+  float: left;
+  width: 50%;
+}
+.links__left{
+  text-align: left;
+}
+.links__right{
+  text-align: right;
+}
+
+.links__head{
+  margin: 0 0 1em 0;
+}
+
+.links__post{
+  font-size:2em;
+  font-weight:700;
+  text-decoration: none;
+  @include link_hover($colorBody,$colorLink);
+}

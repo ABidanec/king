@@ -1,0 +1,49 @@
+.comments{
+  margin: 0 0 1em;
+  padding:1em 0;
+
+}
+.comments__head{
+  font-size:1.5em;
+}
+
+.comments__item{
+  vertical-align: top;
+  margin: 0 0 1em;
+}
+.comments__item_branch{
+  margin: 0 0 1em 3em;
+}
+
+.comments__left,
+.comments__right{
+  float: left;
+}
+.comments__left{
+  width: 12%;
+}
+.comments__right{
+  width: 87%;
+}
+
+.comments__message{
+  margin:0 0 1em 0;
+
+  input, textarea{
+    padding:1em 0.5em;
+    margin: 0 0 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $colorBodyHover;
+  }
+  textarea{
+    margin: 0 0 2em;
+  }
+}
+
+
+
+.message__btn{
+  margin:1em 0 0;
+  @extend .sidebar-email__btn;
+}

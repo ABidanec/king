@@ -1,0 +1,30 @@
+.article{
+  margin: 0 0 2em 0;
+  .post__nav{
+    margin: 0 0 1em 0;
+  }
+
+  ul{
+    list-style-type: circle;
+    padding: 0 0 0 2.5em;
+  }
+}
+
+.heading{
+  display: inline-block;
+  margin: 0 1em 0 0;
+  font-style: italic;
+  font-size:2em;
+}
+
+@import "breadcrumbs";
+
+.article__img{
+  display: block;
+  width: 70%;
+  margin: 0 auto 1em;
+}
+
+@import "links";
+
+@import "comments";
