@@ -886,3 +886,22 @@ a {
   margin: 0.5em 0 0; }
   .footer-soc .soc__list {
     width: 100%; }
+
+.up {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  width: 2em;
+  height: 2em;
+  color: #fff;
+  font-size: 2em;
+  background: #02AFFF;
+  transition: 0.6s; }
+  .up:hover {
+    transition: 0.6s;
+    background: #07FFFD; }
+  .up i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
