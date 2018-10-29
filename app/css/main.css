@@ -341,22 +341,26 @@ ul {
 ::-webkit-input-placeholder {
   color: #000;
   text-overflow: ellipsis;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1em; }
 
 ::-moz-placeholder {
   color: #000;
   text-overflow: ellipsis;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1em; }
 
 :-moz-placeholder {
   color: #000;
   text-overflow: ellipsis;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1em; }
 
 :-ms-input-placeholder {
   color: #000;
   text-overflow: ellipsis;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1em; }
 
 input {
   outline: none;
@@ -525,20 +529,20 @@ a {
     color: #aaa; }
 
 .header-bottom {
+  position: relative;
   padding: 1em 0 0;
-  border-bottom: 2px solid #000;
   margin: 0 0 1em; }
 
 .menu {
-  float: left;
-  width: 80%;
-  text-align: justify;
-  margin: 0 0 -1.125em 0; }
+  border-bottom: 2px solid #000;
+  margin: 0 0 -1em 0; }
 
-.menu__list:after {
-  content: "";
-  height: 0;
-  display: block; }
+.menu__list {
+  text-align: justify; }
+  .menu__list:after {
+    content: "";
+    height: 0;
+    display: block; }
 
 .menu__item {
   display: inline-block; }
@@ -550,7 +554,8 @@ a {
   color: #000;
   transition: 0.6s;
   border-bottom: 2px solid #000;
-  transition: 0.6s; }
+  transition: 0.6s;
+  margin: 0 0 -0.1em; }
   .menu__link:hover {
     transition: 0.6s;
     color: #02AFFF; }
@@ -562,10 +567,13 @@ a {
   border-bottom: 2px solid #02AFFF; }
 
 .soc__list {
+  text-align: justify;
   display: block;
-  float: left;
-  width: 20%;
-  text-align: right; }
+  float: right;
+  width: 21%;
+  height: 3.235em;
+  text-align: right;
+  margin: -2.2em 0 0; }
 
 .soc__item {
   display: inline-block; }
@@ -789,9 +797,11 @@ a {
   margin: 0 0 1em 0;
   color: #fff; }
   .sidebar-search input {
+    width: 50%;
     padding: 1em; }
 
 .sidebar-soc {
+  position: relative;
   background: #EFEFEF;
   padding: 1em;
   margin: 0 0 2em 0; }
@@ -995,10 +1005,10 @@ a {
   float: left; }
 
 .comments__left {
-  width: 12%; }
+  width: 19%; }
 
 .comments__right {
-  width: 87%; }
+  width: 80%; }
 
 .comments__message {
   margin: 0 0 1em 0; }
@@ -1020,9 +1030,200 @@ a {
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1270px) {
+  .menu__link {
+    padding: 1em 0.5em 1.125em; }
+  .soc__list {
+    width: 25%; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .menu__link {
+    padding: 1em 0.5em 1.125em; }
+  .soc__list {
+    width: 27%; }
+  .soc__link {
+    width: 2em;
+    height: 2em; }
+  .top-news__small .news-block__head_small {
+    bottom: 30%; }
+  .top-news__small .news-block__date {
+    bottom: 20%; }
+  .btn {
+    padding: 0.5em; }
+  .sidebar-search input {
+    padding: 0.5em; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .soc__list {
+    float: none;
+    width: 100%; }
+  .soc__list {
+    margin: 1.5em 0 0;
+    text-align: center; }
+  .sidebar-search input {
+    width: 60%;
+    padding: 0 0.2em;
+    line-height: 1; }
+  .sidebar-email input {
+    padding: 0; }
+  .btn {
+    font-size: 0.75em;
+    width: 30%;
+    padding: 0.4em 0.2em; }
+  ::-webkit-input-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 0.75em; }
+  ::-moz-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 0.75em; }
+  :-moz-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 0.75em; }
+  :-ms-input-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 0.75em; }
+  .news-soc__link {
+    width: 1.3em;
+    height: 1.3em; }
+    .news-soc__link i {
+      font-size: 0.75em; }
+  .news-block__head_small {
+    font-size: 0.8em; }
+  .block__item_3 {
+    width: 48%; }
+  .links__post {
+    font-size: 1.5em; }
+  .comments__message,
+  .comments__message {
+    text-align: center; }
+    .comments__message input, .comments__message textarea,
+    .comments__message input,
+    .comments__message textarea {
+      width: 90%; } }
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  ::-webkit-input-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 1em; }
+  ::-moz-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 1em; }
+  :-moz-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 1em; }
+  :-ms-input-placeholder {
+    color: #000;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-size: 1em; }
+  .menu__link {
+    font-size: 0.85em; }
+  .soc__list {
+    display: block;
+    font-variant: normal;
+    width: 100%; }
+  .top-news__left,
+  .top-news__right {
+    width: 100%; }
+  .up {
+    bottom: 0;
+    left: 0;
+    height: 1em;
+    width: 100%; }
+  .content {
+    width: 100%; }
+  .article {
+    text-align: center; }
+  .little-post__left,
+  .little-post__right {
+    width: 99%; }
+  .sidebar {
+    width: 100%; }
+  .sidebar-search {
+    text-align: center; }
+    .sidebar-search input {
+      padding: 0.5em; }
+  .sidebar-soc {
+    text-align: center; }
+  .sidebar-email input {
+    padding: 0.5em; }
+  .sidebar-comments {
+    text-align: center; }
+  .footer__block {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    text-align: center;
+    vertical-align: top; }
+  .footer-email,
+  .footer-tags {
+    width: 100%;
+    text-align: center; }
+  .footer-tags_link {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em 1em; }
+  .footer-copy,
+  .footer-soc {
+    width: 100%;
+    text-align: center;
+    margin: 0; }
+  .btn {
+    padding: 0.5em;
+    font-size: 1em; } }
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100%;
+    text-align: center; }
+  .news-last__left,
+  .news-last__right {
+    width: 100%; } }
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header-top__date,
+  .header-top__search,
+  .header-top__list {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 1em 0; }
+  .header-top__right {
+    width: 100%; }
+  .top-news__small {
+    width: 100%; }
+  .block__item_2,
+  .block__item_3,
+  .little-post__item {
+    width: 100%; }
+  .sidebar-gallery__item {
+    width: 49%;
+    margin: 0 0 1% 0; }
+  .footer__block {
+    width: 99%; } }
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .sidebar-gallery__item {
+    width: 99%; } }
+
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

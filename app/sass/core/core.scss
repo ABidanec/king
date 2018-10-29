@@ -42,7 +42,7 @@ ul{
   margin: 0 auto
 }
 
-@include placeholder($colorBody);
+@include placeholder($colorBody, 1em);
 
 input {outline:none;
   font-style: italic;}

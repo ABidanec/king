@@ -1,18 +1,17 @@
 .header-bottom{
+  position: relative;
   padding:1em 0 0;
-  border-bottom: 2px solid $colorBody;
+
   margin: 0 0 1em;
 }
 
 .menu{
-  float: left;
-  width: 80%;
-  text-align: justify;
-  margin: 0 0 -1.125em 0;
+  border-bottom: 2px solid $colorBody;
+  margin: 0 0 -1em 0;
 }
 
 .menu__list{
-
+  text-align: justify;
   &:after{
     content: "";
     height: 0;
@@ -30,6 +29,7 @@
   text-decoration: none;
   @include link_hover($colorBody,$colorLink);
   @include borderBottomHover($colorBody, $colorLink, 2px);
+  margin: 0 0 -0.1em;
 }
 
 .menu__link_active{
@@ -37,10 +37,13 @@
 }
 
 .soc__list{
+  text-align: justify;
   display: block;
-  float: left;
-  width: 20%;
+  float: right;
+  width: 21%;
+  height:3.235em;
   text-align: right;
+  margin:-2.2em 0 0 ;
 }
 
 .soc__item{

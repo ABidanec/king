@@ -1,33 +1,290 @@
 /*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1270px) {
+  .menu__link{
+    padding:1em 0.5em 1.125em;;
+  }
+
+  .soc__list{
+    width: 25%;
+  }
+}
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+  .menu__link{
+    padding:1em 0.5em 1.125em;;
+  }
 
+ .soc__list{
+   width: 27%;
+ }
+
+  .soc__link{
+    width: 2em;
+    height:2em;
+  }
+  .top-news__small{
+    .news-block__head_small{
+      bottom: 30%;
+    }
+    .news-block__date{
+      bottom: 20%;
+    }
+  }
+  .btn{
+    padding: 0.5em;
+  }
+
+  .sidebar-search{
+
+    input{
+      padding:0.5em;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  //header
+  .soc__list{
+    float: none;
+    width: 100%;
+  }
+
+  .soc__list{
+    margin: 1.5em 0 0;
+    text-align: center;
+  }
+  //end header
+
+  //sidebar
+  .sidebar-search {
+    input {
+      width: 60%;
+      padding: 0 0.2em;
+      line-height: 1;
+    }
+  }
+
+  .sidebar-email {
+    input{
+      padding: 0;
+    }
+  }
+  //end sidebar
+  .btn {
+    font-size: 0.75em;
+    width: 30%;
+    padding: 0.4em 0.2em;
+  }
+
+  @include placeholder($colorBody, 0.75em);
+
+
+  .news-soc__link{
+    width: 1.3em;
+    height:1.3em;
+    i{
+      font-size:0.75em;
+    }
+  }
+  .news-block__head_small{
+    font-size:0.8em;
+  }
+
+  .block__item_3{
+    width: 48%;
+  }
+
+  .links__post{
+    font-size:1.5em;
+  }
+
+  .comments__message,
+  .comments__message {
+    text-align: center;
+    input,textarea{
+      width: 90%;
+    }
+
+  }
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  @include placeholder($colorBody, 1em);
+  //header
+  .menu__link{
+    font-size: 0.85em;
+  }
 
+  .soc__list{
+    display: block;
+    font-variant: normal;
+    width: 100%;
+  }
+  //end header
+
+  //top-news
+  .top-news__left,
+  .top-news__right{
+    width: 100%;
+  }
+  //end top-news
+
+  //up
+  .up{
+    bottom: 0;
+    left: 0;
+    height: 1em;
+    width: 100%;
+  }
+  //end up
+  //content
+  .content{
+    width: 100%;
+  }
+  .article{
+    text-align: center;
+  }
+  .little-post__left,
+  .little-post__right{
+    width: 99%;
+  }
+
+  //end content
+
+  //sidebar
+  .sidebar{
+    width: 100%;
+  }
+  .sidebar-search{
+    text-align: center;
+    input{
+      padding:0.5em;
+    }
+  }
+
+  .sidebar-soc{
+    text-align: center;
+  }
+
+  .sidebar-email{
+    input{
+      padding: 0.5em;
+    }
+  }
+
+  .sidebar-comments{
+    text-align: center;
+  }
+  //end sidebar
+
+  //footer
+  .footer__block{
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .footer-email,
+  .footer-tags{
+    width: 100%;
+    text-align: center;
+  }
+  .footer-tags__item{
+
+  }
+  .footer-tags_link{
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em 1em;
+
+  }
+
+  .footer-copy,
+  .footer-soc{
+    width: 100%;
+    text-align: center;
+    margin:0;
+  }
+
+  //end footer
+  .btn{
+    padding:0.5em;
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width : 600px) {
+  .logo{
+    width: 100%;
+    text-align: center;
+  }
 
+  //category
+  .news-last__left,
+  .news-last__right{
+    width: 100%;
+  }
+  //end category
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  //header
+  .header-top__date,
+  .header-top__search,
+  .header-top__list{
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+  .header-top__right{
+    width: 100%;
+  }
+  //end header
 
+  //top-news
+  .top-news__small{
+    width: 100%;
+  }
+  //end top-news
+  //content
+  .block__item_2,
+  .block__item_3,
+  .little-post__item{
+    width: 100%;
+  }
+  //end content
+
+  //gallery
+  .sidebar-gallery__item{
+    width: 49%;
+   margin:0 0 1% 0;
+
+  }
+  //end gallery
+
+  //footer
+  .footer__block{
+    width: 99%;
+  }
+  //end footer
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+  .sidebar-gallery__item{
+    width:99%;
+  }
 }
 
 
